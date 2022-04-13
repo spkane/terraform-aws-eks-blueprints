@@ -136,8 +136,8 @@ module "eks-blueprints-kubernetes-addons" {
   #K8s Add-ons
   enable_metrics_server     = true
   enable_cluster_autoscaler = true
-  enable_ingress_nginx      = true
 
+  enable_ingress_nginx = true
   ingress_nginx_helm_config = {
     version = "4.0.17"
   }
