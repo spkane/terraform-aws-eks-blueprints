@@ -30,7 +30,7 @@ module "kms" {
 # ---------------------------------------------------------------------------------------------------------------------
 module "aws_eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "v18.17.0"
+  version = "v18.20.2"
   create  = var.create_eks
 
   cluster_name     = var.cluster_name == "" ? module.eks_tags.id : var.cluster_name
